@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "name": "Dr. Félix Martínez Web Design System",
+    "version": "1.0",
+    "purpose": "Single source of truth for all component and visual styles. AI and developers must follow this when building or extending the application. Use this file when developing new features.",
+    "techStack": "React, Vite, Tailwind CSS. Section backgrounds use PRIMARY_BG from src/design-tokens.js.",
+    "typography": "Primary (display/headings): Cormorant Garamond. Secondary (body/UI): Outfit. Implement in doctor-website via index.css and tailwind.config.js; keep designweb.json and this file in sync.",
+    "colorSourceOfTruth": "Section background: PRIMARY_BG in doctor-website/src/design-tokens.js (#EFECE9). Full palette: this file and doctor-website/COLOR-PALETTE.md. Tailwind: primary-bg, hero-panel, dark-teal, deep-blue, dark-charcoal, body-text, footer-text, header-bar (hex values must match)."
+  },
+
+  "designPrinciples": [
+    "Use PRIMARY_BG (#EFECE9) for all section backgrounds so the site stays visually consistent.",
+    "Headings and primary UI elements use dark teal (#3C5759). Deep blue (#143852) is used for hero/subtitles and some headings.",
+    "Body text and descriptions use gray #4b5563. Keep line-height relaxed (1.6) for readability.",
+    "Cards and hero panel use white (#FFFFFF) on the primary background for clear hierarchy.",
+    "Footer and primary buttons use dark teal (#3C5759). Footer text uses cool grey (#D0D5CE).",
+    "All interactive elements have consistent transitions (duration-base 200ms, focus rings on brand color).",
+    "UI copy is in Spanish (e.g. Inicio, Sobre Mí, Contacto, Reservar Cita)."
+  ],
+
+  "colors": {
+    "primaryBackground": {
+      "hex": "#EFECE9",
+      "usage": "Hero section bg, Services, Testimonials, CTA, Header nav/inner area, mobile dropdown, About section, Contact section. MUST use PRIMARY_BG from design-tokens.js in code.",
+      "name": "Off-white / Primary web color"
+    },
+    "heroPanel": {
+      "hex": "#FFFFFF",
+      "usage": "Hero inner card, cards, form containers, button contrast"
+    },
+    "headerBar": {
+      "hex": "#D0D5CE",
+      "usage": "Sticky header outer strip (sage/cool grey)"
+    },
+    "darkTeal": {
+      "hex": "#3C5759",
+      "usage": "Section headings, nav links, primary buttons, footer background, icons, labels, borders/focus, card titles"
+    },
+    "deepBlue": {
+      "hex": "#143852",
+      "usage": "Hero subtitle area text, some headings (e.g. ColorPreview), carousel arrow icons"
+    },
+    "darkCharcoal": {
+      "hex": "#192524",
+      "usage": "Button active state, gradient end (e.g. About image block gradient)"
+    },
+    "bodyText": {
+      "hex": "#4b5563",
+      "usage": "Paragraphs, descriptions, captions, form placeholder context"
+    },
+    "footerText": {
+      "hex": "#D0D5CE",
+      "usage": "Footer body text and links (on dark teal background)"
+    },
+    "referencePalette": {
+      "sageGreen": "#959D90",
+      "paleMint": "#D1EBDB"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "primary": "Cormorant Garamond, serif",
+      "secondary": "Outfit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    },
+    "import": "Google Fonts: Cormorant Garamond (400-700, italic 400) for display/headings; Outfit (300-700) for body and UI. See index.css.",
+    "base": {
+      "body": "font-secondary, 16px, #4b5563, line-height 1.6",
+      "headings": "font-primary, color #3C5759 (unless specified deep blue)"
+    },
+    "scale": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "30px",
+      "4xl": "36px",
+      "5xl": "48px",
+      "6xl": "60px",
+      "7xl": "72px"
+    },
+    "headings": {
+      "h1": "text-5xl (48px), font-bold, leading-tight, tracking-tight, font-primary, #3C5759",
+      "h2": "text-4xl (36px), font-bold, leading-tight, tracking-tight, font-primary, #3C5759",
+      "h3": "text-3xl (30px), font-semibold, leading-snug, tracking-tight, font-primary, #3C5759",
+      "h4": "text-2xl (24px), font-semibold, leading-normal",
+      "h5": "text-xl (20px), font-semibold, leading-normal",
+      "h6": "text-lg (18px), font-semibold, leading-normal"
+    }
+  },
+
+  "spacing": {
+    "sectionVertical": "py-20 (e.g. About, Services, Testimonials, CTA, Contact)",
+    "sectionTitlebar": "170px (hero top padding)",
+    "sectionTitlebarBottom": "100px (hero bottom padding)",
+    "mobilePaddingTop": "120px",
+    "carouselGap": "50px",
+    "cardPadding": "24px",
+    "containerMaxWidth": "1440px (max-w-container-max)",
+    "containerPadding": "px-6 (24px), hero uses px-[2.5%]"
+  },
+
+  "layout": {
+    "container": "max-w-container-max mx-auto px-6",
+    "sectionBackground": "Always use style={{ backgroundColor: PRIMARY_BG }} for sections that share the primary web color.",
+    "gridPatterns": {
+      "twoColumn": "grid grid-cols-1 lg:grid-cols-2 gap-12",
+      "fourColumn": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "threeColumn": "grid grid-cols-1 md:grid-cols-3 gap-8"
+    }
+  },
+
+  "components": {
+    "header": {
+      "outer": "sticky top-0 z-50 bg-[#D0D5CE] border-b border-gray-200 shadow-sm",
+      "nav": "max-w-container-max mx-auto px-6 h-20 flex items-center justify-between, backgroundColor: PRIMARY_BG",
+      "brandLink": "text-2xl font-bold text-gray-600 font-primary hover:text-gray-700 transition-colors duration-base",
+      "navLink": "px-4 py-3 text-base font-medium text-[#3C5759] hover:text-[#3C5759]/80 hover:bg-gray-50 rounded-lg transition-all duration-base",
+      "ctaInNav": "btn-primary ml-4",
+      "mobileMenuButton": "p-2 text-[#3C5759], icon w-6 h-6",
+      "mobileDropdown": "md:hidden border-t border-gray-200 shadow-lg, backgroundColor: PRIMARY_BG, max-w-container-max mx-auto px-6 py-4 space-y-2",
+      "mobileNavLink": "block px-4 py-3 text-base font-medium text-[#3C5759] hover:bg-gray-50 rounded-lg"
+    },
+    "hero": {
+      "section": "pt-section-titlebar pb-section-titlebar-bottom, backgroundColor: PRIMARY_BG",
+      "panel": "bg-white rounded-lg shadow-xl overflow-hidden",
+      "innerPadding": "p-8 md:p-12 lg:p-16",
+      "grid": "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center",
+      "eyebrow": "text-sm font-medium tracking-widest uppercase text-[#3C5759]/70 mb-3 pb-1 border-b-2 border-[#3C5759]/30 inline-block",
+      "title": "text-4xl md:text-5xl font-bold text-[#3C5759] mb-6 font-primary leading-tight",
+      "subtitleArea": "text-[#143852] for left column wrapper; paragraph text-lg md:text-xl text-[#3C5759]/80 mb-8 leading-relaxed",
+      "buttons": "flex flex-col sm:flex-row gap-4; primary = btn-primary, secondary = btn-secondary",
+      "carouselContainer": "w-full h-[400px] md:h-[500px] lg:h-[600px]"
+    },
+    "sectionTitle": {
+      "className": "section-title",
+      "spec": "text-sm font-medium tracking-widest uppercase text-[#4b5563] mb-3 pb-1 border-b-2 border-[#3C5759] inline-block"
+    },
+    "sectionHeading": {
+      "className": "section-heading",
+      "spec": "text-4xl font-bold text-[#3C5759] mb-4"
+    },
+    "sectionDescription": {
+      "className": "section-description",
+      "spec": "text-lg text-[#4b5563] max-w-2xl"
+    },
+    "card": {
+      "className": "card",
+      "spec": "bg-white p-6 rounded-xl shadow-md border border-gray-200 transition-all duration-base",
+      "hover": "shadow-lg transform -translate-y-0.5",
+      "cardTitle": "text-xl font-semibold text-[#3C5759] font-primary"
+    },
+    "buttons": {
+      "btnPrimary": {
+        "className": "btn-primary",
+        "spec": "bg-[#3C5759] text-white px-6 py-3 rounded-lg font-semibold font-secondary text-base transition-all duration-base shadow-sm",
+        "hover": "bg-[#3C5759]/90 shadow-md",
+        "active": "bg-[#192524] transform translate-y-px"
+      },
+      "btnSecondary": {
+        "className": "btn-secondary",
+        "spec": "bg-transparent text-[#3C5759] px-6 py-3 rounded-lg font-semibold font-secondary text-base border-2 border-[#3C5759] transition-all duration-base",
+        "hover": "bg-[#3C5759] text-white"
+      }
+    },
+    "about": {
+      "section": "py-20, backgroundColor: PRIMARY_BG",
+      "listItem": "flex items-center gap-3; icon circle w-5 h-5 rounded-full bg-[#3C5759], text white check; label text-base font-medium text-[#3C5759]",
+      "imageCard": "bg-white rounded-xl shadow-lg p-8",
+      "imageBlock": "aspect-square bg-gradient-to-br from-[#3C5759] to-[#192524] rounded-lg, text white center; subtitle text-[#D0D5CE]"
+    },
+    "services": {
+      "section": "py-20, backgroundColor: PRIMARY_BG",
+      "card": "card text-center",
+      "icon": "text-5xl mb-4",
+      "title": "text-xl font-semibold text-[#3C5759] mb-3 font-primary",
+      "description": "text-[#4b5563] leading-relaxed"
+    },
+    "testimonials": {
+      "section": "py-20, backgroundColor: PRIMARY_BG, id testimonials (index.css reinforces #EFECE9)",
+      "card": "card",
+      "stars": "flex items-center gap-1 mb-4, w-5 h-5 text-yellow-400",
+      "quote": "text-[#4b5563] mb-6 leading-relaxed italic",
+      "author": "font-semibold text-[#3C5759] font-primary",
+      "role": "text-sm text-[#4b5563]"
+    },
+    "cta": {
+      "section": "py-20, backgroundColor: PRIMARY_BG",
+      "wrapper": "max-w-3xl mx-auto text-center",
+      "heading": "text-4xl font-bold text-[#3C5759] mb-6 font-primary",
+      "paragraph": "text-xl text-gray-600 mb-8 leading-relaxed",
+      "buttons": "flex flex-col sm:flex-row gap-4 justify-center; btn-primary, btn-secondary"
+    },
+    "contact": {
+      "section": "py-20, backgroundColor: PRIMARY_BG",
+      "infoCard": "card with flex items-start gap-4",
+      "iconBox": "w-12 h-12 rounded-lg bg-[#3C5759] flex items-center justify-center flex-shrink-0, icon w-6 h-6 text-white",
+      "formCard": "card",
+      "formHeading": "text-2xl font-semibold text-[#3C5759] mb-6 font-primary",
+      "label": "block text-sm font-medium text-[#3C5759] mb-2",
+      "input": "w-full h-12 px-4 rounded-lg border border-gray-300 focus:border-[#3C5759] focus:ring-2 focus:ring-[#3C5759]/10 outline-none transition-all duration-base",
+      "textarea": "w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#3C5759] focus:ring-2 focus:ring-[#3C5759]/10 outline-none transition-all duration-base resize-vertical",
+      "submitButton": "btn-primary w-full"
+    },
+    "footer": {
+      "container": "bg-[#3C5759] text-white py-12",
+      "grid": "grid grid-cols-1 md:grid-cols-3 gap-8 mb-8",
+      "brandLink": "text-2xl font-bold font-primary mb-4 block hover:text-[#D0D5CE] transition-colors duration-base",
+      "bodyText": "text-[#D0D5CE] leading-relaxed",
+      "columnHeading": "text-lg font-semibold mb-4 font-primary",
+      "link": "text-[#D0D5CE] hover:text-white transition-colors duration-base",
+      "divider": "border-t border-[#3C5759] pt-8 text-center text-[#D0D5CE]"
+    },
+    "imageCarousel": {
+      "wrapper": "relative w-full h-full rounded-lg overflow-hidden",
+      "slide": "absolute inset-0 transition-opacity duration-500; active opacity-100, inactive opacity-0",
+      "image": "w-full h-full object-cover",
+      "arrow": "absolute top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#143852] p-2 rounded-full shadow-lg transition-all duration-base z-10, left-4 / right-4, icon w-6 h-6",
+      "dots": "absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10",
+      "dot": "w-3 h-3 rounded-full transition-all duration-base; active bg-white w-8, inactive bg-white/50 hover:bg-white/75",
+      "autoPlayInterval": "5000"
+    }
+  },
+
+  "forms": {
+    "label": "block text-sm font-medium text-[#3C5759] mb-2",
+    "inputBase": "rounded-lg border border-gray-300 focus:border-[#3C5759] focus:ring-2 focus:ring-[#3C5759]/10 outline-none transition-all duration-base",
+    "inputHeight": "h-12 for single-line, py-3 for textarea",
+    "padding": "px-4"
+  },
+
+  "effects": {
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+    },
+    "borderRadius": {
+      "sm": "2px",
+      "md": "4px",
+      "lg": "8px",
+      "xl": "12px",
+      "2xl": "16px"
+    },
+    "transitions": {
+      "durationFast": "150ms",
+      "durationBase": "200ms",
+      "durationSlow": "300ms",
+      "durationSlower": "500ms",
+      "timingDefault": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  },
+
+  "guidelines": {
+    "newSections": "Use PRIMARY_BG from design-tokens.js for section background. Use container: max-w-container-max mx-auto px-6.",
+    "newHeadings": "Use section-title + section-heading + section-description pattern where applicable. Headings font-primary, color #3C5759.",
+    "newCards": "Use .card class (white bg, rounded-xl, shadow-md, border gray-200). Card titles text-[#3C5759] font-primary.",
+    "newButtons": "Use .btn-primary for main action, .btn-secondary for secondary. Same colors and borders as defined above.",
+    "newForms": "Labels text-[#3C5759], inputs with focus:border-[#3C5759] focus:ring-2 focus:ring-[#3C5759]/10.",
+    "icons": "On dark teal backgrounds use white fill/stroke. Size context: w-5 h-5 small, w-6 h-6 default, w-12 h-12 for feature icons in cards.",
+    "accessibility": "Maintain focus rings (focus:ring-2 focus:ring-[#3C5759]/10). Use aria-label on icon-only buttons. Sufficient contrast: body #4b5563 on white, #D0D5CE on #3C5759.",
+    "language": "User-facing copy is Spanish (Inicio, Sobre Mí, Contacto, Reservar Cita, etc.). Keep new UI strings in Spanish."
+  }
+}
