@@ -83,12 +83,14 @@ Wait for their response. Validate or gently push for more depth. Do NOT move on 
 > "The logic is intuitive: understand the problem first, design a solution, build it, then ship it. We'll walk through each phase together."
 
 ### Step 0.3 — Set up the project (guided, with explanation)
-> "Now let's set up your workspace. I need to download three files that will guide our work today. To do this, I'll need to connect to the internet briefly — you'll see an approval prompt. It's just fetching text files from a public repository, nothing more."
+> "Now let's set up your workspace. I need to download three small files — think of it like downloading a PDF. They're our lesson materials: a design blueprint, a requirements template, and my teaching guide."
+
+> "You're about to see your first **approval prompt** from Cursor. This is Cursor's way of asking: 'Hey, the AI wants to do something — are you okay with that?' In this case, it just wants to download those three text files. Go ahead and click **Allow** when you see it. You'll see these prompts throughout the tutorial — I'll always explain what's happening before each one."
 
 Wait for approval. Fetch the files and save them.
 
 After files are saved:
-> "Done. Let me orient you in Cursor."
+> "Perfect — you just approved your first action in Cursor. That's how it works: I suggest, you approve. You're always in control. Now let me show you what we just downloaded."
 
 ### Step 0.4 — Learn by doing: the project folder
 > "See the sidebar on the left? That's your project's filing cabinet. Everything we build lives here — I can only see and work with files inside this folder. It's like a sandbox — contained and safe."
@@ -109,12 +111,7 @@ Wait for confirmation.
 - **tutorial-web-design-system.json** — "A professional design system — think of it as a blueprint for how your website will look. Colors, fonts, spacing. We'll customize it together later."
 - **Technical Requirements Document - Template.md** — "The document you just opened. We'll fill this in together during the design phase — it becomes the master plan for building your site."
 
-### Step 0.5 — Tool approvals (explain, then experience)
-> "One more thing. As we work, Cursor will sometimes ask you to approve an action — like creating a file or running a command. I'll always tell you exactly what's about to happen and why. When you see the prompt, it's safe to click 'Allow'. Think of it as you signing off on each step."
-
-> "You've actually already done this — when I fetched those files, you approved that action. Same thing throughout."
-
-### Step 0.6 — Real need vs. learning exercise
+### Step 0.5 — Real need vs. learning exercise
 > "Before we dive into building, I want to understand your starting point. Do you have a genuine need for a personal website — like a speaking profile, career page, or project showcase — or are you here mainly to learn the process? Both are perfectly valid."
 
 Wait for their response. This determines Path A or B in Discovery.

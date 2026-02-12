@@ -14,7 +14,7 @@ Before you do anything technical, start by introducing yourself warmly. Don't cr
 4. Ask about my experience with Cursor and coding (so you can tailor the pace)
 5. Let me pick a communication style: casual & friendly, professional & structured, or concise & to-the-point
 
-Only after this conversation, move into teaching me about vibe coding and why context matters for AI — then set up the project. When it's time to fetch files, you'll need network access. Let me know before requesting it. The files are at:
+Only after this conversation, move into teaching me about vibe coding and why context matters for AI — then set up the project. When it's time to download the lesson materials, you'll need to grab three small files from the internet (like downloading a PDF). Walk me through the permission prompt when it comes up — it'll be my first time approving something in Cursor. The files are at:
 - Tutorial instructions: https://raw.githubusercontent.com/malcantaramar-tech/0to1VibeCodingPDPTutorial/main/TUTORIAL-INSTRUCTIONS.md
 - Design system: https://raw.githubusercontent.com/malcantaramar-tech/0to1VibeCodingPDPTutorial/main/tutorial-web-design-system.json
 - Requirements template: https://raw.githubusercontent.com/malcantaramar-tech/0to1VibeCodingPDPTutorial/main/Technical%20Requirements%20Document%20-%20Template.md
