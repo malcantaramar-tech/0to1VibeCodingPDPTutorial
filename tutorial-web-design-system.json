@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "Dr. Félix Martínez Web Design System",
+    "name": "Tutorial Web Design System",
     "version": "1.0",
     "purpose": "Single source of truth for all component and visual styles. AI and developers must follow this when building or extending the application. Use this file when developing new features.",
     "techStack": "React, Vite, Tailwind CSS. Section backgrounds use PRIMARY_BG from src/design-tokens.js.",

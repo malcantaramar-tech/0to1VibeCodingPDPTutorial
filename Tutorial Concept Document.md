@@ -154,7 +154,7 @@ The learner picks what they want. The AI explains what each one involves (light/
 
 #### 3B. Visual Identity (built on top of a baseline design system)
 
-The tutorial uses `web-design-system.json` as the **baseline design system**. This file defines a complete, production-quality set of design tokens: colors, typography, spacing, components, layout patterns, effects, and guidelines. Instead of building a design system from scratch, the learner starts from this proven foundation and only adjusts the specific choices that make the site theirs.
+The tutorial uses `tutorial-web-design-system.json` as the **baseline design system**. This file defines a complete, production-quality set of design tokens: colors, typography, spacing, components, layout patterns, effects, and guidelines. Instead of building a design system from scratch, the learner starts from this proven foundation and only adjusts the specific choices that make the site theirs.
 
 The AI explains this upfront: *"We're starting from a professional design system that handles all the technical details — spacing, shadows, responsive layouts, accessibility. Your job is to make the key creative decisions that give the site your identity. Everything else is already taken care of."*
 
@@ -197,7 +197,7 @@ Technical Requirements Document
 ├── 2. Site Map
 │     Pages/sections list with hierarchy (sourced from Feature Definition §3A)
 ├── 3. Design System Reference
-│     Points to web-design-system.json + documents any overrides the learner chose (sourced from Visual Identity §3B)
+│     Points to tutorial-web-design-system.json + documents any overrides the learner chose (sourced from Visual Identity §3B)
 ├── 4. Technical Stack
 │     Framework, hosting, deployment method (React + Vite + Tailwind, Vercel)
 └── 5. Requirements Table (see Layer 2)
@@ -351,7 +351,7 @@ Total: approximately **1.5 to 2 hours**, depending on how much the learner explo
 
 ## 5. Open Questions for Alignment
 
-1. ~~**Technical complexity:**~~ **Resolved.** The baseline design system (`web-design-system.json`) uses React + Vite + Tailwind CSS. The tutorial will use this stack. The learner doesn't need to understand the stack — the AI handles it — but they get a production-quality result rather than a toy HTML page.
+1. ~~**Technical complexity:**~~ **Resolved.** The baseline design system (`tutorial-web-design-system.json`) uses React + Vite + Tailwind CSS. The tutorial will use this stack. The learner doesn't need to understand the stack — the AI handles it — but they get a production-quality result rather than a toy HTML page.
 
 2. ~~**Hosting platform:**~~ **Resolved.** Vercel — simplest deployment flow from Cursor.
 
@@ -371,7 +371,7 @@ Total: approximately **1.5 to 2 hours**, depending on how much the learner explo
 
 **Hosted files (in the GitHub repo):**
 - `TUTORIAL-INSTRUCTIONS.md` — The full playbook the AI follows
-- `web-design-system.json` — Baseline design system
+- `tutorial-web-design-system.json` — Baseline design system
 - `Technical Requirements Document - Template.md` — Template used during Section 3C
 
 **Learner experience:**

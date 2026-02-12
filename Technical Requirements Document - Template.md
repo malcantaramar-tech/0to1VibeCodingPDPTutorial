@@ -66,7 +66,7 @@ The site is structured as a [single-page scroll / multi-page site] with the foll
 
 <!-- Sourced from: Design §3B (Visual Identity) -->
 
-**Baseline:** `web-design-system.json` (v1.0)
+**Baseline:** `tutorial-web-design-system.json` (v1.0)
 
 The following design tokens have been customized by the learner. All other tokens remain at baseline defaults.
 
@@ -125,7 +125,7 @@ The following design tokens have been customized by the learner. All other token
 | Styling        | Tailwind CSS    | Utility-first, matches the design system JSON     |
 | Hosting        | [Vercel / TBD]  | Free tier, instant deploys, custom domain support |
 | Version control| Git (local)     | Track changes throughout development              |
-| Design tokens  | `web-design-system.json` | Single source of truth for all visual styles |
+| Design tokens  | `tutorial-web-design-system.json` | Single source of truth for all visual styles |
 
 ---
 

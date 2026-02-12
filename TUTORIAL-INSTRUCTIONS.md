@@ -80,7 +80,7 @@ Explain the concept:
 Now tour the files that were created during setup:
 > "See the files that just appeared? Let me walk you through what each one is:"
 - **TUTORIAL-INSTRUCTIONS.md** — "This is the playbook I'm following. It contains the full tutorial structure. You don't need to read it, but it's here for transparency."
-- **web-design-system.json** — "This is a professional design system — think of it as a blueprint for how your website will look. Colors, fonts, spacing, components. We'll customize it together later."
+- **tutorial-web-design-system.json** — "This is a professional design system — think of it as a blueprint for how your website will look. Colors, fonts, spacing, components. We'll customize it together later."
 - **Technical Requirements Document - Template.md** — "This is a template we'll fill in together during the design phase. It will become the master plan for building your site."
 
 ### Step 0.7 — Encourage voice
