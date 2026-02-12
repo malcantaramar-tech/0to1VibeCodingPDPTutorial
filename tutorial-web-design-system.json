@@ -4,8 +4,8 @@
     "version": "1.0",
     "purpose": "Single source of truth for all component and visual styles. AI and developers must follow this when building or extending the application. Use this file when developing new features.",
     "techStack": "React, Vite, Tailwind CSS. Section backgrounds use PRIMARY_BG from src/design-tokens.js.",
-    "typography": "Primary (display/headings): Cormorant Garamond. Secondary (body/UI): Outfit. Implement in doctor-website via index.css and tailwind.config.js; keep designweb.json and this file in sync.",
-    "colorSourceOfTruth": "Section background: PRIMARY_BG in doctor-website/src/design-tokens.js (#EFECE9). Full palette: this file and doctor-website/COLOR-PALETTE.md. Tailwind: primary-bg, hero-panel, dark-teal, deep-blue, dark-charcoal, body-text, footer-text, header-bar (hex values must match)."
+    "typography": "Primary (display/headings): Cormorant Garamond. Secondary (body/UI): Outfit. Implement via index.css and tailwind.config.js.",
+    "colorSourceOfTruth": "Section background: PRIMARY_BG (#EFECE9). Tailwind tokens: primary-bg, hero-panel, dark-teal, deep-blue, dark-charcoal, body-text, footer-text, header-bar (hex values must match this file)."
   },
 
   "designPrinciples": [
