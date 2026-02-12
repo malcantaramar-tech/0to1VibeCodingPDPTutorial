@@ -44,7 +44,7 @@
 
 ## 2. Site Map
 
-<!-- Sourced from: Design §3A (Feature Definition) -->
+<!-- Sourced from: Design §2A (Feature Definition) -->
 
 The site is structured as a [single-page scroll / multi-page site] with the following sections:
 
@@ -64,7 +64,7 @@ The site is structured as a [single-page scroll / multi-page site] with the foll
 
 ## 3. Design System
 
-<!-- Sourced from: Design §3B (Visual Identity) -->
+<!-- Sourced from: Design §2B (Visual Identity) -->
 
 **Baseline:** `tutorial-web-design-system.json` (v1.0)
 
@@ -131,7 +131,7 @@ The following design tokens have been customized by the learner. All other token
 
 ## 5. Content Map
 
-<!-- Sourced from: Discovery §5 (Content Inventory) + Design §3A -->
+<!-- Sourced from: Discovery conversation (Content Inventory) + Design §2A -->
 
 What content goes where. Marks whether the learner has the content ready or needs to create/source it.
 
@@ -164,8 +164,8 @@ What content goes where. Marks whether the learner has the content ready or need
 
 | ID     | Requirement                                              | Source  | Priority | Status  |
 |--------|----------------------------------------------------------|---------|----------|---------|
-| REQ-01 | Site uses [single-page / multi-page] layout              | DS§3B   | Must     | Pending |
-| REQ-02 | Navigation includes links to all sections                | DS§3A   | Must     | Pending |
+| REQ-01 | Site uses [single-page / multi-page] layout              | DS§2B   | Must     | Pending |
+| REQ-02 | Navigation includes links to all sections                | DS§2A   | Must     | Pending |
 | REQ-03 | Navigation is sticky/fixed on scroll                     | Default | Should   | Pending |
 | REQ-04 | Mobile hamburger menu for small screens                  | Default | Must     | Pending |
 
@@ -176,16 +176,16 @@ What content goes where. Marks whether the learner has the content ready or need
 | REQ-05 | Display full name prominently                            | D§1     | Must     | Pending |
 | REQ-06 | Role or tagline below name                               | D§2     | Must     | Pending |
 | REQ-07 | Professional headshot or image                           | D§5     | Must     | Pending |
-| REQ-08 | Primary CTA button (e.g., "Contact me", "See my work")  | DS§3A   | Must     | Pending |
-| REQ-09 | Secondary CTA button (optional)                          | DS§3A   | Could    | Pending |
+| REQ-08 | Primary CTA button (e.g., "Contact me", "See my work")  | DS§2A   | Must     | Pending |
+| REQ-09 | Secondary CTA button (optional)                          | DS§2A   | Could    | Pending |
 
 ### 6.3 About Section
 
 | ID     | Requirement                                              | Source  | Priority | Status  |
 |--------|----------------------------------------------------------|---------|----------|---------|
 | REQ-10 | Bio text (2–3 paragraphs)                                | D§5     | Must     | Pending |
-| REQ-11 | Key skills or expertise list                             | DS§3A   | Should   | Pending |
-| REQ-12 | Supporting image or visual element                       | DS§3A   | Could    | Pending |
+| REQ-11 | Key skills or expertise list                             | DS§2A   | Should   | Pending |
+| REQ-12 | Supporting image or visual element                       | DS§2A   | Could    | Pending |
 
 ### 6.4 [Section Name] — *Repeat for each section the learner chose*
 
@@ -200,16 +200,16 @@ What content goes where. Marks whether the learner has the content ready or need
 |--------|----------------------------------------------------------|---------|----------|---------|
 | REQ-XX | Display email address                                    | D§5     | Must     | Pending |
 | REQ-XX | Social media links (LinkedIn, etc.)                      | D§5     | Should   | Pending |
-| REQ-XX | Contact form (name, email, message)                      | DS§3A   | Could    | Pending |
+| REQ-XX | Contact form (name, email, message)                      | DS§2A   | Could    | Pending |
 
 ### 6.6 Design & Global
 
 | ID     | Requirement                                              | Source  | Priority | Status  |
 |--------|----------------------------------------------------------|---------|----------|---------|
-| REQ-XX | Apply learner's chosen color palette                     | DS§3B   | Must     | Pending |
-| REQ-XX | Apply learner's chosen font pairing                      | DS§3B   | Must     | Pending |
-| REQ-XX | Display logo/monogram in header                          | DS§3B   | Should   | Pending |
-| REQ-XX | All UI copy in learner's chosen language                  | DS§3B   | Must     | Pending |
+| REQ-XX | Apply learner's chosen color palette                     | DS§2B   | Must     | Pending |
+| REQ-XX | Apply learner's chosen font pairing                      | DS§2B   | Must     | Pending |
+| REQ-XX | Display logo/monogram in header                          | DS§2B   | Should   | Pending |
+| REQ-XX | All UI copy in learner's chosen language                  | DS§2B   | Must     | Pending |
 | REQ-XX | Responsive — fully functional on mobile and desktop      | Default | Must     | Pending |
 | REQ-XX | Accessible — sufficient contrast, focus states, alt text | Default | Must     | Pending |
 | REQ-XX | Meta tags (title, description, Open Graph)               | Default | Should   | Pending |

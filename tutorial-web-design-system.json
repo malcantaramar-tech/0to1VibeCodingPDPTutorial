@@ -15,7 +15,7 @@
     "Cards and hero panel use white (#FFFFFF) on the primary background for clear hierarchy.",
     "Footer and primary buttons use dark teal (#3C5759). Footer text uses cool grey (#D0D5CE).",
     "All interactive elements have consistent transitions (duration-base 200ms, focus rings on brand color).",
-    "UI copy is in Spanish (e.g. Inicio, Sobre Mí, Contacto, Reservar Cita)."
+    "UI copy language is determined by the learner during the tutorial (Design Choice 5). Default baseline examples use English."
   ],
 
   "colors": {
@@ -263,6 +263,6 @@
     "newForms": "Labels text-[#3C5759], inputs with focus:border-[#3C5759] focus:ring-2 focus:ring-[#3C5759]/10.",
     "icons": "On dark teal backgrounds use white fill/stroke. Size context: w-5 h-5 small, w-6 h-6 default, w-12 h-12 for feature icons in cards.",
     "accessibility": "Maintain focus rings (focus:ring-2 focus:ring-[#3C5759]/10). Use aria-label on icon-only buttons. Sufficient contrast: body #4b5563 on white, #D0D5CE on #3C5759.",
-    "language": "User-facing copy is Spanish (Inicio, Sobre Mí, Contacto, Reservar Cita, etc.). Keep new UI strings in Spanish."
+    "language": "User-facing copy language is chosen by the learner during the tutorial. Apply their chosen language consistently across all UI strings."
   }
 }
